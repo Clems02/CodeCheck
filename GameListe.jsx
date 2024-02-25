@@ -31,7 +31,6 @@ const GameListe = () => {
     if (isLoading) {
         return (
             <div>
-                <button>Player appel</button>
                 Chargement en cours. . .
             </div>
         )
@@ -39,10 +38,13 @@ const GameListe = () => {
 
     if (error) {
         return (
-            <div>Erreur: {error}</div>
+            <div>
+                Erreur: {error}
+            </div>
         )
     }
 
+    
     return (
         <>
             {games.map((game) => (
